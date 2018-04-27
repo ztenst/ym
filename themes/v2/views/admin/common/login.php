@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title><?php echo $this->pageTitle='系统后台登录' ?></title>
+<title><?php echo $this->pageTitle=$this->sitename.'系统后台登录' ?></title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -26,7 +26,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <meta content="" name="author"/>
 
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://fonts.useso.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<!-- <link href="http://fonts.useso.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/> -->
 <link href="/static/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="/static/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="/static/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -60,7 +60,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="content ">
 	<!-- BEGIN LOGIN FORM -->
 	<form class="login-form" action="" method="post">
-		<h3 class="form-title" style="font-family: 微软雅黑">系统管理后台</h3>
+		<h3 class="form-title" style="font-family: 微软雅黑"><?=$this->sitename?>系统管理后台</h3>
 		<div class="alert alert-danger <?php if(!$model->hasErrors('error')) echo 'display-hide'; ?>">
 			<button class="close" data-close="alert"></button>
 			<span><?php echo $model->getError('error') ?></span>
@@ -93,7 +93,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- END LOGIN -->
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright">
-	 2017 &copy; 马德里工作室版权所有
+	 2018 &copy; 常州回音网络版权所有
 </div>
 <!-- END COPYRIGHT -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->

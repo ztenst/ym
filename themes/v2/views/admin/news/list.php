@@ -1,5 +1,5 @@
 <?php
-$this->pageTitle = '文章列表';
+$this->pageTitle = $page_title;
 $this->breadcrumbs = array($this->pageTitle);
 ?>
 <div class="table-toolbar">
@@ -15,15 +15,17 @@ $this->breadcrumbs = array($this->pageTitle);
                 <?php echo CHtml::dropDownList('time_type',$time_type,array('created'=>'添加时间','updated'=>'修改时间'),array('class'=>'form-control','encode'=>false)); ?>
             </div>
             <?php Yii::app()->controller->widget("DaterangepickerWidget",['time'=>$time,'params'=>['class'=>'form-control chose_text']]);?>
+            <?php if($cates1):?>
             <div class="form-group">
-                <?php echo CHtml::dropDownList('cate',$cate,$cates,array('class'=>'form-control chose_select','encode'=>false,'prompt'=>'--选择栏目--')); ?>
+                <?php echo CHtml::dropDownList('cate',$cate,$cates1,array('class'=>'form-control chose_select','encode'=>false,'prompt'=>'--选择栏目--')); ?>
             </div>
+        <?php endif;?>
             <button type="submit" class="btn blue">搜索</button>
             <a class="btn yellow" onclick="removeOptions()"><i class="fa fa-trash"></i>&nbsp;清空</a>
         </form>
     </div>
     <div class="pull-right">
-        <a href="<?php echo $this->createAbsoluteUrl('edit') ?>" class="btn blue">
+        <a href="<?php echo $this->createAbsoluteUrl('edit',['mid'=>$mid]) ?>" class="btn blue">
             添加文章 <i class="fa fa-plus"></i>
         </a>
     </div>
@@ -56,7 +58,7 @@ $this->breadcrumbs = array($this->pageTitle);
             <td class="text-center"><?php echo CHtml::ajaxLink(ArticleExt::$status[$v->status],$this->createUrl('ajaxChangeStatus'), array('type'=>'get', 'data'=>array('id'=>$v->id),'success'=>'function(data){location.reload()}'), array('class'=>'btn btn-sm '.ArticleExt::$statusStyle[$v->status])); ?></td>
 
             <td style="text-align:center;vertical-align: middle">
-                <a href="<?php echo $this->createUrl('/admin/news/edit',array('id'=>$v->id)); ?>" class="btn default btn-xs green"><i class="fa fa-edit"></i> 修改 </a>
+                <a href="<?php echo $this->createUrl('/admin/news/edit',array('id'=>$v->id,'mid'=>$mid)); ?>" class="btn default btn-xs green"><i class="fa fa-edit"></i> 修改 </a>
                 <?php echo CHtml::htmlButton('删除', array('data-toggle'=>'confirmation', 'class'=>'btn btn-xs red', 'data-title'=>'确认删除？', 'data-btn-ok-label'=>'确认', 'data-btn-cancel-label'=>'取消', 'data-popout'=>true,'ajax'=>array('url'=>$this->createUrl('ajaxDel'),'type'=>'get','success'=>'function(data){location.reload()}','data'=>array('id'=>$v->id))));?>
 
 

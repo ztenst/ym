@@ -13,9 +13,12 @@ class TagExt extends Tag
     static $xinfangCate = [
         //直接式标签
         'direct' => [
-            'wzlm' => '文章栏目',
+            // 'wzlm' => '文章栏目',
+            'gywm'=>'关于我们子分类',
+            'fw'=>'服务子分类',
+            'xw'=>'新闻子分类',
             // 'xcfl' => '相册分类',
-            'hjlx' => '案例类型',
+            // 'hjlx' => '案例类型',
             // 'ptpz' => '葡萄品种',
             // 'hjxl' => '红酒系列',
             // 'jzdq' => '酒庄地区',

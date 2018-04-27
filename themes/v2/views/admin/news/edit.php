@@ -1,6 +1,6 @@
 <?php
-$this->pageTitle = '资讯新建/编辑';
-$this->breadcrumbs = array('资讯管理', $this->pageTitle);
+$this->pageTitle = $page_title.'新建/编辑';
+$this->breadcrumbs = array($this->pageTitle);
 ?>
 <?php $this->widget('ext.ueditor.UeditorWidget',array('id'=>'ArticleExt_content','options'=>"toolbars:[['fullscreen','source','undo','redo','|','customstyle','paragraph','fontfamily','fontsize'],
         ['bold','italic','underline','fontborder','strikethrough','superscript','subscript','removeformat',
@@ -31,17 +31,11 @@ $this->breadcrumbs = array('资讯管理', $this->pageTitle);
 <div class="form-group">
     <label class="col-md-2 control-label">分类</label>
     <div class="col-md-4">
-        <?php echo $form->dropDownList($article, 'cid', $cates, array('class' => 'form-control', 'encode' => false)); ?>
+        <?php echo $form->dropDownList($article, 'cid', $cates1, array('class' => 'form-control', 'encode' => false)); ?>
     </div>
     <div class="col-md-2"><?php echo $form->error($article, 'cid') ?></div>
 </div>
-<div class="form-group">
-    <label class="col-md-2 control-label">案例类别</label>
-    <div class="col-md-4">
-        <?php echo $form->dropDownList($article, 'mid', $cates1, array('class' => 'form-control', 'encode' => false)); ?>
-    </div>
-    <div class="col-md-2"><?php echo $form->error($article, 'mid') ?></div>
-</div>
+
 <div class="form-group">
     <label class="col-md-2 control-label">作者<span class="required" aria-required="true">*</span></label>
     <div class="col-md-4">
