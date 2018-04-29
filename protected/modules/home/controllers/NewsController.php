@@ -1,12 +1,12 @@
 <?php
-class ServeController extends HomeController
+class NewsController extends HomeController
 {
     public function actionList($cid='')
     {
         $this->banner = '';
         $this->cssmain = 'baseMain';
         $criteria = new CDbCriteria;
-        $criteria->addCondition("mid=2");
+        $criteria->addCondition("mid=3");
         if($cid) {
             $criteria->addCondition("cid=$cid");
         }

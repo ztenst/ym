@@ -11,7 +11,7 @@ class SiteExt extends Site{
     public static $cates = [
         // pc首页轮播图
         'pcIndexImages'=>[],
-        'pcProductImage'=>'',
+        'pcCompanyImage'=>'',
         'pcNewsImage'=>'',
         'pcTeamImage'=>'',
         'pcServiceImage'=>'',
@@ -52,7 +52,7 @@ class SiteExt extends Site{
             'addr'=>['type'=>'text','name'=>'地址'],
             'wx'=>['type'=>'text','name'=>'公众号微信'],
             'yb'=>['type'=>'text','name'=>'邮编'],
-            'pcProductImage'=>['type'=>'image','max'=>1,'name'=>'pc首页案例背景图'],
+            'pcCompanyImage'=>['type'=>'image','max'=>1,'name'=>'pc首页公司背景图'],
             'pcNewsImage'=>['type'=>'image','max'=>1,'name'=>'pc首页新闻背景图'],
             'pcTeamImage'=>['type'=>'image','max'=>1,'name'=>'pc首页团队背景图'],
             'pcServiceImage'=>['type'=>'image','max'=>1,'name'=>'pc首页服务背景图'],
@@ -165,7 +165,7 @@ class SiteExt extends Site{
     public static function getAttr($cate='',$attr='')
     {
         $model = self::model()->getSiteByCate($cate)->find();
-        return $model->$attr&&$model->$attr?$model->$attr:'';
+        return $model&&$model->$attr&&$model->$attr?$model->$attr:'';
 
     }
 

@@ -7,11 +7,12 @@
 class HomeController extends Controller
 {
     //关键字
-    private $keyword;
+    public $keywords;
 
     //描述
-    private $description;
+    public $description;
     public $banner = 'nobanner';
+    public $cssmain = 'indexMain';
     public $pageTitle;
     /**
      * @var string 页面底部
