@@ -29,6 +29,7 @@
                     <div class="module-content fw" id="servicelist">
                         <div class="wrapper">
                             <ul class="content_list" data-options-sliders="3" data-options-margin="50" data-options-ease="u65e0" data-options-speed="0">
+                            <?php $tagdes = ['一站式便捷服务','探索世界 从此开始','海外资源 你我共享'] ?>
                             <?php if($tags = TagExt::model()->normal()->findAll("cate='fw'")) {
                                 foreach ($tags as $key => $value) {?>
                                     <li id="serviceitem_<?=$key?>" class="serviceitem wow">
@@ -36,7 +37,7 @@
                                             <p class="service_img"><img src="<?=ImageTools::fixImage($value->image)?>" width="320" height="120" alt="<?=$value->name?>" /></p>
                                             <div class="service_info">
                                                 <p class="title"><?=$value->name?></p>
-                                                <p class="description"><?='说点什么吧...'?></p>
+                                                <p class="description"><?=$tagdes[$key]?></p>
                                             </div>
                                         </a>
                                         <a href="<?=$this->createUrl('/home/serve/list',['cid'=>$value->id])?>" target="_blank" class="details">more<i class="fa fa-angle-right"></i></a>
