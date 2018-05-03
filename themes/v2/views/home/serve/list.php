@@ -21,7 +21,7 @@
                         <?php if($infos) foreach ($infos as $key => $value) {?>
                             <li class="projectitem">
                                 <a href="<?=$this->createUrl('info',['id'=>$value->id])?>" target="_blank">
-                                    <div class="project_img"><img src="<?=ImageTools::fixImage($value->image,500,320)?>" width="500" height="320" /></div>
+                                    <div class="project_img"><img src="<?=ImageTools::fixImage($value->image,360,230)?>" width="500" height="320" /></div>
                                     <div class="project_info">
                                         <div>
                                             <p class="title"><?=$value->title?></p>
