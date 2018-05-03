@@ -728,7 +728,7 @@
 
 #category a.active, #category a:hover { background:#3490DC; color: #fff; border-color: #3490DC; }
 
-#mproject #category { display: block; visibility: visible; }
+#mproject #category { display: block; visibility: visible; font-size: 16px}
 
 #category{padding-bottom: 10px;}
 
