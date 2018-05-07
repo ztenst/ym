@@ -24,8 +24,8 @@
                                     <div class="project_img"><img src="<?=ImageTools::fixImage($value->image,360,230)?>" width="500" height="320" /></div>
                                     <div class="project_info">
                                         <div>
-                                            <p class="title"><?=$value->title?></p>
-                                            <p class="subtitle"><?=$value->sub_title?></p>
+                                            <p class="title" style="font-size: 16px"><?=$value->title?></p>
+                                            <p class="subtitle" style="font-size: 14px"><?=$value->sub_title?></p>
                                             <p class="description hide"><?=$value->desc?></p>
                                         </div>
                                     </div>

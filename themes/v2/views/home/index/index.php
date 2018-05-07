@@ -83,7 +83,7 @@
                         <!-- <p class="title">精英团队</p> -->
                         <!-- <p class="subtitle">承担起社会赋予企业的重视安全 职业健康责任</p> -->
                     </div>
-                    <img src="<?=Yii::app()->theme->baseUrl?>/static/home/imgs/fwlc.jpg" alt="" width="">
+                    <img src="<?=Yii::app()->theme->baseUrl?>/static/home/imgs/fwlc.jpg" alt="" width="100%">
                     <div class="clear"></div>
                     <a href="http://mo004_1497.mo4.line1.uemo.net/team/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
                 </div>
