@@ -12,6 +12,7 @@ class SiteExt extends Site{
         // pc首页轮播图
         'pcIndexImages'=>[],
         'pcCompanyImage'=>'',
+        'pcProgressImage'=>'',
         'pcNewsImage'=>'',
         'pcTeamImage'=>'',
         'pcServiceImage'=>'',
@@ -54,6 +55,7 @@ class SiteExt extends Site{
             'yb'=>['type'=>'text','name'=>'邮编'],
             'pcCompanyImage'=>['type'=>'image','max'=>1,'name'=>'pc首页公司背景图'],
             'pcNewsImage'=>['type'=>'image','max'=>1,'name'=>'pc首页新闻背景图'],
+            'pcProgressImage'=>['type'=>'image','max'=>1,'name'=>'pc首页服务流程背景图'],
             'pcTeamImage'=>['type'=>'image','max'=>1,'name'=>'pc首页团队背景图'],
             'pcServiceImage'=>['type'=>'image','max'=>1,'name'=>'pc首页服务背景图'],
             'pcContactImage'=>['type'=>'image','max'=>1,'name'=>'pc首页联系背景图'],
