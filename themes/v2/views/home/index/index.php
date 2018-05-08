@@ -14,6 +14,9 @@
     line-height: 30px;
     right: 3px!important;
     }
+    #indexPage .team_tabs .tab_content .item_block .item_wrapper .item_info .description{
+        font-size: 18px !important;
+    }
 </style>
 <div id="indexPage">
             <div id="mslider" class="module">
