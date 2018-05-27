@@ -30,7 +30,7 @@
             margin-left: -56px;
             position: absolute;
             width: 240px;
-            top: 14px;
+            top: 30px;
             font-style: oblique;
         }
         /*#sitecontent{
@@ -55,7 +55,7 @@
                         <li><a href="<?=$this->createUrl('/home/about/contact')?>" target="_self"><span data-title="联系我们">联系我们</span><i class="fa fa-angle-right"></i></a></li>
                     </ul>
                 </li>
-                <li class="navitem"><a class="nav-a <?=strstr($pathInfo,'serve')?'active':''?>" href="javascript:;" target=""><span data-title="我们的服务">我们的服务</span><i class="fa fa-angle-down"></i></a>
+                <li class="navitem"><a href="<?=$this->createUrl('/home/serve/list')?>" class="nav-a <?=strstr($pathInfo,'serve')?'active':''?>" href="javascript:;" target=""><span data-title="我们的服务">我们的服务</span><i class="fa fa-angle-down"></i></a>
                     <ul class="subnav">
                     <?php if($tags = TagExt::model()->normal()->findAll("cate='fw'")){
                         foreach ($tags as $t) {?>

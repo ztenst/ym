@@ -14,6 +14,16 @@
     line-height: 30px;
     right: 3px!important;
     }
+    .cname{
+            font-family: 微软雅黑;
+            color: #00b7ee;
+            font-size: 18px;
+            margin-left: -56px;
+            position: absolute;
+            width: 240px;
+            top: 14px;
+            font-style: oblique;
+        }
     .mlist.service .content_list .item_block .item_wrapper {
         padding: 38px 38px 46px 38px;
         text-align: center;
@@ -25,8 +35,12 @@
         overflow: hidden;
         margin: 10px;
     }
+    #indexPage #mindex a.more {
+    margin: 80px auto;
+    display: block;
+}
     .mlist .content_list .item_block .title {
-    font-size: 16px;
+    font-size: 20px;
 }
 .mlist .content_list .item_block .subtitle {
     font-size: 13px;
@@ -80,69 +94,42 @@
                     <?php } ?>
                 </ul>
             </div>
-            <div id="mindex" data-options-ease="Expo.easeInOut" data-options-speed="1" data-options-sscreen="0"></div>
-            <div class="mlist service module" style=""> 
+            <div id="mindex" style="" data-options-ease="Expo.easeInOut" data-options-speed="1" data-options-sscreen="0"></div>
+            <div class="mlist service module" style="padding-bottom: 0"> 
          <div class="bgmask"></div>
          <div class="module_container">
-                    <div class="container_header wow animated" style="visibility: visible;">
-                <p class="title">优质的服务</p>
-                <p class="subtitle">Publish what you think, don't put it on social media</p>       </div>
+                    <div class="container_header wow animated" style="visibility: visible;width: 100%">
+                <p class="title" style="text-align: center">优质的服务</p>
+                <p class="subtitle" style="text-align: center">Business Services</p>       </div>
                     
                                   <div class="container_content">
                   <div class="content_wrapper">
                                           <ul class="content_list row gutter">
-          <li id="item_block_0" class="item_block col-33 wow" style="animation-delay: 0s; visibility: visible; animation-name: fadeInUp;">
+                                          <?php $tagdes = ['一站式便捷服务','探索世界 从此开始','海外资源 你我共享'] ?>
+                                          <?php $desdes = ['杭州英曼人力资源有限公司拥有来自世界各国的国际认证母语外教资源库，范围遍布全国...','只有自己走向世界，用自己的眼睛观察世界，才能发现哪里才是最适合自己的...','以更高的平台挖掘自身的潜力，致力于提供量身定做的海外实习项目，感受不一样的实习氛围...'] ?>
+                                          <?php if($tags = TagExt::model()->findAll("cate='fw'")) foreach ($tags as $key => $value) {?>
+                                              <li id="item_block_<?=$key?>" class="item_block col-33 wow" style="animation-delay: 0s; visibility: visible; animation-name: fadeInUp;">
             <div class="content">
-                <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/410/" class="item_img" target="_blank" style="background-image:url(http://resources.jsmo.xin/templates/upload/6666/201804/1524461510560.jpg)">
-                   <img src="http://resources.jsmo.xin/templates/upload/6666/201804/1524461510560.jpg">
+                <a href="<?=$this->createUrl('/home/serve/list',['cid'=>$value->id])?>" class="item_img" target="_blank" style="background-image:url(<?=ImageTools::fixImage($value->image,300,200)?>)">
+                   <img src="<?=ImageTools::fixImage($value->image,300,200)?>">
                    <div class="item_img_mask"></div>
                 </a>
                 <div class="item_wrapper">
-                   <p class="title ellipsis">用户体验设计</p>
-                   <p class="subtitle ellipsis">Customer Experience Design</p>
+                   <p class="title ellipsis"><?=$value->name?></p>
+                   <p class="subtitle ellipsis"><?=$tagdes[$key]?></p>
                    <div class="description">
-                      <p>2是以用户为中心的一种设计手段，以用户需求为目标而进行的设计。设计过程注重以用户为中心，用户体验的概念从开发的最早期就开始进入整个流程，并贯穿始终</p>
+                      <p><?=$desdes[$key]?></p>
                    </div>
-                   <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/410/" class="more" target="_blank">more</a>
+                   <a href="<?=$this->createUrl('/home/serve/list',['cid'=>$value->id])?>" class="more" target="_blank">more</a>
                 </div> 
             </div>
         </li>
-          <li id="item_block_1" class="item_block col-33 wow" style="animation-delay: 0.1s; visibility: visible; animation-name: fadeInUp;">
-            <div class="content">
-                <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/409/" class="item_img" target="_blank" style="background-image:url(http://resources.jsmo.xin/templates/upload/6666/201804/1524461544853.jpg)">
-                   <img src="http://resources.jsmo.xin/templates/upload/6666/201804/1524461544853.jpg">
-                   <div class="item_img_mask"></div>
-                </a>
-                <div class="item_wrapper">
-                   <p class="title ellipsis">产品和服务设计</p>
-                   <p class="subtitle ellipsis">Product  Service Design</p>
-                   <div class="description">
-                      <p></p><p>一个创造性的综合信息处理过程，通过多种元素如线条、符号、数字、色彩等方式的组合把产品的形状以平面或立体的形式展现出来。它是将人的某种目的或需要转换为一个具体的物理或工具的过程；是把一种计划、规划设想、问题解决的方法</p><p></p>
-                   </div>
-                   <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/409/" class="more" target="_blank">more</a>
-                </div> 
-            </div>
-        </li>
-          <li id="item_block_2" class="item_block col-33 wow" style="animation-delay: 0.2s; visibility: visible; animation-name: fadeInUp;">
-            <div class="content">
-                <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/398/" class="item_img" target="_blank" style="background-image:url(http://resources.jsmo.xin/templates/upload/6666/201803/1522144147774.jpg)">
-                   <img src="http://resources.jsmo.xin/templates/upload/6666/201803/1522144147774.jpg">
-                   <div class="item_img_mask"></div>
-                </a>
-                <div class="item_wrapper">
-                   <p class="title ellipsis">工业设计</p>
-                   <p class="subtitle ellipsis">Industrial Design</p>
-                   <div class="description">
-                      <p>工业设计分为产品设计、环境设计、传播设计、设计管理4类；包括造型设计、机械设计、电路设计、服装设计、环境规划、室内设计、建筑设计、UI设计、平面设计、包装设计、广告设计、动画设计、展示设计</p>
-                   </div>
-                   <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/398/" class="more" target="_blank">more</a>
-                </div> 
-            </div>
-        </li>
+                                          <?php } ?>
         </ul>
-      <a href="" class="more hide wow animated" style="animation-delay: 0.5s; visibility: visible;"></a>
+      <a href="<?=$this->createUrl('/home/serve/list')?>" class="more hide wow animated" style="animation-delay: 0.5s; visibility: visible;display: block;"></a>
                                           </div><!--wrapper-->
-                  <div class="clear"></div>   
+                  <div class="clear"></div>
+                    
                                            
              </div>
              <div class="clear"></div>
@@ -223,7 +210,7 @@
                                                 <p class="date"><span class="md"><?=date('Y',$value->updated)?><span>-</span></span><span class="year"><?=date('m-d',$value->updated)?></span></p>
                                                 <p class="title"><?=$value->title?></p>
                                                 <div class="separator"></div>
-                                                <p class="description"><?=Tools::u8_title_substr($value->desc,40)?></p>
+                                                <p class="description"><?=Tools::u8_title_substr($value->desc,80)?></p>
                                             </div>
                                         </div>
                                         <div class="newsimg" style="background-image:url(<?=ImageTools::fixImage($value->image)?>)"></div>

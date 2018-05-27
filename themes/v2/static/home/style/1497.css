@@ -240,7 +240,7 @@
 
 #newslist .newstitem:hover .newsinfo { transform: translate3d(0px, -14px, 0px); -webkit-transform: translate3d(0px, -14px, 0px); }
 
-#newslist .newsbody .title { width:90%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 0 20px 0; font-size: 16px; height: 20px; line-height: 20px; }
+#newslist .newsbody .title { width:90%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 0 20px 0; font-size: 20px; height: 20px; line-height: 20px; }
 
 #newslist .newstitem:hover .description { color: #777; }
 
@@ -863,7 +863,7 @@
 
 #newslist .newstitem .year { color: #8a8a8a; font-size: 13px; float: none; }
 
-#newslist .newsbody .description { width:91%; margin-top:-20px; font-size: 12px; color: #777; text-align: left; height: 42px; overflow: hidden; }
+#newslist .newsbody .description { width:91%; margin-top:-20px; font-size: 14px; color: #777; text-align: left; height: 42px; overflow: hidden; }
 
 #indexPage #mnews .newstitem a.details { display: block; position: absolute; z-index: 20; top: -3px; background: none; width: 100px; height: 20px; margin: 0px; border-radius: 0px; line-height: 21px; text-indent: -94px; overflow: hidden; border: none; right: 90px; }
 
