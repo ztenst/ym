@@ -23,6 +23,16 @@
     <title><?=$this->pageTitle?></title>
     <style type="text/css">
         a[href="http://www.uemo.net"]{display:none}
+        .cname{
+            font-family: 微软雅黑;
+            color: #00b7ee;
+            font-size: 18px;
+            margin-left: -56px;
+            position: absolute;
+            width: 240px;
+            top: 14px;
+            font-style: oblique;
+        }
         /*#sitecontent{
             padding-top: 86px
         }*/
@@ -32,7 +42,10 @@
 <body class="<?=$this->banner?>">
     <div class="bodyMask"> </div>
     <div id="header" class="index_nav">
-        <div class="content"><a href="<?=$this->createUrl('/home/index/index')?>" id="logo"><img src="<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcLogo'),194,40)?>" height="40" /></a>
+        <div class="content">
+            <a href="<?=$this->createUrl('/home/index/index')?>" id="logo"><img src="<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcLogo'),194,40)?>" height="40" />
+                <span class="cname">杭州英曼人力资源有限公司</span>
+            </a>
             <ul id="nav">
             <?php $pathInfo = Yii::app()->request->getPathInfo();?>
                 <li class="navitem"><a class="nav-a  <?=!$pathInfo||$pathInfo=='home/index/index'?'active':''?> " href="<?=$this->createUrl('/home/index/index')?>" target="_self"><span  data-title="首页">首页</span></a></li>

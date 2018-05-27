@@ -14,6 +14,48 @@
     line-height: 30px;
     right: 3px!important;
     }
+    .mlist.service .content_list .item_block .item_wrapper {
+        padding: 38px 38px 46px 38px;
+        text-align: center;
+        transition: all linear .2s;
+        transform: translate(0,0);
+    }
+    #indexPage .service .item_block .item_img, .npagePage:not(.post) .service .item_block .item_img {
+        transition: all .36s ease;
+        overflow: hidden;
+        margin: 10px;
+    }
+    .mlist .content_list .item_block .title {
+    font-size: 16px;
+}
+.mlist .content_list .item_block .subtitle {
+    font-size: 13px;
+    color: #939393;
+    margin-top: 3px;
+}
+.mlist.service .content_list .item_block .item_wrapper .description {
+    font-size: 13px;
+    margin: 20px 0 30px;
+    color: #939393;
+    height: 48px;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+    .ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#indexPage #topSlider ul li .wrapper .description .title {
+    font-size: 36px;
+    line-height: 1.1;
+}
+    #indexPage .service .item_block .item_img img, .npagePage:not(.post) .service .item_block .item_img img {
+    transition: all .36s ease;
+    width: 100%;
+}
     #indexPage .team_tabs .tab_content .item_block .item_wrapper .item_info .description{
         font-size: 18px !important;
     }
@@ -26,7 +68,7 @@
                 <ul class="slider" data-options-height="640" data-options-auto="0" data-options-mode="1" data-options-pause="5" data-options-ease="ease-out">
                     <?php if($imgs = SiteExt::getAttr('qjpz','pcIndexImages')) foreach ($imgs as $key => $value) {?>
                         <li style="background-image:url(<?=ImageTools::fixImage($value)?>)" class="active">
-                            <div id="tempImage_<?=$key?>"></div><img style="display:none" src="<?=ImageTools::fixImage($value)?>" alt="" />
+                            <div id="tempImage_<?=$key?>"></div><img style="display:none" src="<?=ImageTools::fixImage($value,1915,640)?>" alt="" />
                             <div class="mask"></div>
                             <a target="_blank">
                                 <div>
@@ -39,7 +81,74 @@
                 </ul>
             </div>
             <div id="mindex" data-options-ease="Expo.easeInOut" data-options-speed="1" data-options-sscreen="0"></div>
-            <div id="mservice" class="module bgShow" style="background-image:url(<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcServiceImage'))?>);">
+            <div class="mlist service module" style=""> 
+         <div class="bgmask"></div>
+         <div class="module_container">
+                    <div class="container_header wow animated" style="visibility: visible;">
+                <p class="title">优质的服务</p>
+                <p class="subtitle">Publish what you think, don't put it on social media</p>       </div>
+                    
+                                  <div class="container_content">
+                  <div class="content_wrapper">
+                                          <ul class="content_list row gutter">
+          <li id="item_block_0" class="item_block col-33 wow" style="animation-delay: 0s; visibility: visible; animation-name: fadeInUp;">
+            <div class="content">
+                <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/410/" class="item_img" target="_blank" style="background-image:url(http://resources.jsmo.xin/templates/upload/6666/201804/1524461510560.jpg)">
+                   <img src="http://resources.jsmo.xin/templates/upload/6666/201804/1524461510560.jpg">
+                   <div class="item_img_mask"></div>
+                </a>
+                <div class="item_wrapper">
+                   <p class="title ellipsis">用户体验设计</p>
+                   <p class="subtitle ellipsis">Customer Experience Design</p>
+                   <div class="description">
+                      <p>2是以用户为中心的一种设计手段，以用户需求为目标而进行的设计。设计过程注重以用户为中心，用户体验的概念从开发的最早期就开始进入整个流程，并贯穿始终</p>
+                   </div>
+                   <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/410/" class="more" target="_blank">more</a>
+                </div> 
+            </div>
+        </li>
+          <li id="item_block_1" class="item_block col-33 wow" style="animation-delay: 0.1s; visibility: visible; animation-name: fadeInUp;">
+            <div class="content">
+                <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/409/" class="item_img" target="_blank" style="background-image:url(http://resources.jsmo.xin/templates/upload/6666/201804/1524461544853.jpg)">
+                   <img src="http://resources.jsmo.xin/templates/upload/6666/201804/1524461544853.jpg">
+                   <div class="item_img_mask"></div>
+                </a>
+                <div class="item_wrapper">
+                   <p class="title ellipsis">产品和服务设计</p>
+                   <p class="subtitle ellipsis">Product  Service Design</p>
+                   <div class="description">
+                      <p></p><p>一个创造性的综合信息处理过程，通过多种元素如线条、符号、数字、色彩等方式的组合把产品的形状以平面或立体的形式展现出来。它是将人的某种目的或需要转换为一个具体的物理或工具的过程；是把一种计划、规划设想、问题解决的方法</p><p></p>
+                   </div>
+                   <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/409/" class="more" target="_blank">more</a>
+                </div> 
+            </div>
+        </li>
+          <li id="item_block_2" class="item_block col-33 wow" style="animation-delay: 0.2s; visibility: visible; animation-name: fadeInUp;">
+            <div class="content">
+                <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/398/" class="item_img" target="_blank" style="background-image:url(http://resources.jsmo.xin/templates/upload/6666/201803/1522144147774.jpg)">
+                   <img src="http://resources.jsmo.xin/templates/upload/6666/201803/1522144147774.jpg">
+                   <div class="item_img_mask"></div>
+                </a>
+                <div class="item_wrapper">
+                   <p class="title ellipsis">工业设计</p>
+                   <p class="subtitle ellipsis">Industrial Design</p>
+                   <div class="description">
+                      <p>工业设计分为产品设计、环境设计、传播设计、设计管理4类；包括造型设计、机械设计、电路设计、服装设计、环境规划、室内设计、建筑设计、UI设计、平面设计、包装设计、广告设计、动画设计、展示设计</p>
+                   </div>
+                   <a href="http://mo006-8755.mo6.line1.uemo.net/forum/post/398/" class="more" target="_blank">more</a>
+                </div> 
+            </div>
+        </li>
+        </ul>
+      <a href="" class="more hide wow animated" style="animation-delay: 0.5s; visibility: visible;"></a>
+                                          </div><!--wrapper-->
+                  <div class="clear"></div>   
+                                           
+             </div>
+             <div class="clear"></div>
+         </div>
+      </div>
+            <!-- <div id="mservice" class="module bgShow" style="background-image:url(<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcServiceImage'))?>);">
                 <div class="bgmask"></div>
                 <div class="content layoutnone">
                     <div class="header wow fw" data-wow-delay=".1s">
@@ -69,278 +178,9 @@
                     </div>
                     <div class="clear"></div>
                     <a href="<?=$this->createUrl('/home/serve/list')?>" class="more wow">MORE<i class="fa fa-angle-right"></i></a></div>
-            </div>
-            <div class="mlist team_tabs module bgShow  ff_noSlider" style="background-position: center center; background-size: initial; background-repeat: no-repeat;background-image:url(<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcProgressImage'))?>);">
-    <div class="bgmask"></div>
-    <div class="module_container">
-        <div class="container_content">
-            <div class="content_wrapper">
-                <div class="tab_content">
-                <div class="header wow" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" style="padding-top: 40px">
-                                        <center><p class="title" style="color: #444;font-size: 26px;">服务流程</p>
-                                        <p class="subtitle" style="    font-size: 12px;    color: #A5A5A5;line-height: 30px">Serve Progress</p></center>
-                                    </div>
-                    <div class="bx-wrapper" style="max-width: 240px; margin: 0px auto;">
-                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 251px;">
-                            <ul class="content_list" style="width: 615%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
-                                <li id="item_block_0" class="item_block wow" style="animation-delay: 0s; float: left; list-style: none; position: relative; width: 240px; visibility: visible; animation-name: fadeInUp;">
-                                    <div class="wrapper">
-                                        <a href="javascript::void(0);" target="_blank">
-                                            
-                                        </a>
-                                        <div class="item_wrapper"><a href="javascript::void(0);" target="_blank">
-                            </a>
-                                            <div class="item_info">
-                                                <a href="javascript::void(0);" target="_blank">
-                                                    <p class="title ellipsis">Step 1</p>
-                                                    <p class="subtitle">Corporate culture</p>
-                                                    <div class="description">
-                                                        <div class="cScrollbar mCustomScrollbar _mCS_1 mCS_no_scrollbar">
-                                                            <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0">
-                                                                <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                                    <p>客服经理咨询</p>
-                                                                </div>
-                                                                <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
-                                                                    <div class="mCSB_draggerContainer">
-                                                                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
-                                                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
-                                                                        </div>
-                                                                        <div class="mCSB_draggerRail"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="" class="details"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_1" class="item_block wow" style="animation-delay: 0.1s; float: left; list-style: none; position: relative; width: 240px; visibility: visible; animation-name: fadeInUp;">
-                                    <div class="wrapper">
-                                        <a href="javascript::void(0);" target="_blank">
-                                            
-                                        </a>
-                                        <div class="item_wrapper"><a href="javascript::void(0);" target="_blank">
-                            </a>
-                                            <div class="item_info">
-                                                <a href="javascript::void(0);" target="_blank">
-                                                    <p class="title ellipsis">Step 2</p>
-                                                    <p class="subtitle">Sense of worth</p>
-                                                    <div class="description">
-                                                        <div class="cScrollbar mCustomScrollbar _mCS_2 mCS_no_scrollbar">
-                                                            <div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
-                                                                <div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                                    <p>确定需求</p>
-                                                                </div>
-                                                                <div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
-                                                                    <div class="mCSB_draggerContainer">
-                                                                        <div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
-                                                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
-                                                                        </div>
-                                                                        <div class="mCSB_draggerRail"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="" class="details"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_2" class="item_block wow" style="animation-delay: 0.2s; float: left; list-style: none; position: relative; width: 240px; visibility: visible; animation-name: fadeInUp;">
-                                    <div class="wrapper">
-                                        <a href="javascript::void(0);" target="_blank">
-                                            
-                                        </a>
-                                        <div class="item_wrapper"><a href="javascript::void(0);" target="_blank">
-                            </a>
-                                            <div class="item_info">
-                                                <a href="javascript::void(0);" target="_blank">
-                                                    <p class="title ellipsis">Step 3</p>
-                                                    <p class="subtitle">Corporate Event</p>
-                                                    <div class="description">
-                                                        <div class="cScrollbar mCustomScrollbar _mCS_3 mCS_no_scrollbar">
-                                                            <div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
-                                                                <div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                                    <p>签订协议
-                                                                    </p>
-                                                                </div>
-                                                                <div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
-                                                                    <div class="mCSB_draggerContainer">
-                                                                        <div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
-                                                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
-                                                                        </div>
-                                                                        <div class="mCSB_draggerRail"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="" class="details"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_3" class="item_block wow" style="animation-delay: 0s; float: left; list-style: none; position: relative; width: 240px; visibility: visible; animation-name: fadeInUp;">
-                                    <div class="wrapper">
-                                        <a href="javascript::void(0);" target="_blank">
-                                            
-                                        </a>
-                                        <div class="item_wrapper"><a href="javascript::void(0);" target="_blank">
-                            </a>
-                                            <div class="item_info">
-                                                <a href="javascript::void(0);" target="_blank">
-                                                    <p class="title ellipsis">Step 4</p>
-                                                    <p class="subtitle">Social Responsibility</p>
-                                                    <div class="description">
-                                                        <div class="cScrollbar mCustomScrollbar _mCS_4 mCS_no_scrollbar">
-                                                            <div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
-                                                                <div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                                    <p>提供服务</p>
-                                                                </div>
-                                                                <div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
-                                                                    <div class="mCSB_draggerContainer">
-                                                                        <div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
-                                                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
-                                                                        </div>
-                                                                        <div class="mCSB_draggerRail"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="" class="details"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_4" class="item_block wow" style="animation-delay: 0s; float: left; list-style: none; position: relative; width: 240px; visibility: visible; animation-name: fadeInUp;">
-                                    <div class="wrapper">
-                                        <a href="javascript::void(0);" target="_blank">
-                                            
-                                        </a>
-                                        <div class="item_wrapper"><a href="javascript::void(0);" target="_blank">
-                            </a>
-                                            <div class="item_info">
-                                                <a href="javascript::void(0);" target="_blank">
-                                                    <p class="title ellipsis">Step 5</p>
-                                                    <p class="subtitle">Social Responsibility</p>
-                                                    <div class="description">
-                                                        <div class="cScrollbar mCustomScrollbar _mCS_4 mCS_no_scrollbar">
-                                                            <div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
-                                                                <div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                                    <p>售后服务</p>
-                                                                </div>
-                                                                <div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
-                                                                    <div class="mCSB_draggerContainer">
-                                                                        <div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
-                                                                            <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
-                                                                        </div>
-                                                                        <div class="mCSB_draggerRail"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="" class="details"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- <div class="bx-controls bx-has-controls-direction">
-                            <div class="bx-controls-direction"><a class="bx-prev" href=""><i class="fa fa-angle-left"></i></a><a class="bx-next" href=""><i class="fa fa-angle-right"></i></a></div>
-                        </div> -->
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="tab_button" data-tab-num="5" style="margin-right: 0px;">
-                    <div class="bx-wrapper" style="max-width: 100px; margin: 0px auto;">
-                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 0px;">
-                            <ul class="content_list" style="width: 615%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
-                                <li id="item_block_0" class="item_block active  wow" data-tab-index="0" style="animation-delay: 0s; width: 25px; margin-right: 0px; float: left; list-style: none; position: relative; visibility: hidden; animation-name: none;" data-wow-delay=".0s">
-                                    <div class="wrapper">
-                                        
-                                        <div class="item_wrapper">
-                                            <div class="item_info">
-                                                <p class="title ellipsis">2006</p>
-                                                <p class="subtitle">Corporate culture</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_1" class="item_block  wow" data-tab-index="1" style="animation-delay: 0.1s; width: 25px; margin-right: 0px; float: left; list-style: none; position: relative; visibility: hidden; animation-name: none;" data-wow-delay=".1s">
-                                    <div class="wrapper">
-                                        
-                                        <div class="item_wrapper">
-                                            <div class="item_info">
-                                                <p class="title ellipsis">2008</p>
-                                                <p class="subtitle">Sense of worth</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_2" class="item_block  wow" data-tab-index="2" style="animation-delay: 0.2s; width: 25px; margin-right: 0px; float: left; list-style: none; position: relative; visibility: hidden; animation-name: none;" data-wow-delay=".2s">
-                                    <div class="wrapper">
-                                        
-                                        <div class="item_wrapper">
-                                            <div class="item_info">
-                                                <p class="title ellipsis">2016</p>
-                                                <p class="subtitle">Corporate Event</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_3" class="item_block  wow" data-tab-index="3" style="animation-delay: 0s; width: 25px; margin-right: 0px; float: left; list-style: none; position: relative; visibility: hidden; animation-name: none;" data-wow-delay=".3s">
-                                    <div class="wrapper">
-                                        
-                                        <div class="item_wrapper">
-                                            <div class="item_info">
-                                                <p class="title ellipsis">2017</p>
-                                                <p class="subtitle">Social Responsibility</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li id="item_block_4" class="item_block  wow" data-tab-index="4" style="animation-delay: 0s; width: 25px; margin-right: 0px; float: left; list-style: none; position: relative; visibility: hidden; animation-name: none;" data-wow-delay=".3s">
-                                    <div class="wrapper">
-                                        
-                                        <div class="item_wrapper">
-                                            <div class="item_info">
-                                                <p class="title ellipsis">2017</p>
-                                                <p class="subtitle">Social Responsibility</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="icon" style="left: 12.5px;"></p>
-                    <div class="clear"></div>
-                </div>
-                <script type="text/javascript">
-                $(document).ready(function(e) {
-                    var idcnStartX = $(".tab_button li.active").position().left + ($(".tab_button li.active").width() - $(".tab_button .icon").width) / 2;
-                    $(".tab_button .icon").css("left", idcnStartX);
-
-                    $(".tab_button li").click(function(e) {
-                        var left = $(this).position().left;
-                        var iconLeft = left + ($(this).width() - $(".tab_button .icon").width) / 2;
-                        $(".tab_button .icon").stop().animate({ left: iconLeft }, 500);
-                    });
-                });
-                </script>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
+            </div> -->
             <!--project-->
-            <div id="mpage" class="module">
+            <!-- <div id="mpage" class="module">
                 <div class="bgmask"></div>
                 <div class="content">
                     <div class="module-content">
@@ -363,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <div id="mnews" class="module bgShow" style="background-image:url(<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcNewsImage'))?>);">
                 <div class="bgmask"></div>
@@ -399,61 +239,7 @@
                     <div style="height:0">&nbsp;</div>
                 </div>
             </div>
-            <!-- <div id="mpartner" class="module">
-                <div class="bgmask"></div>
-                <div class="content layoutslider">
-                    <div class="header wow fw" data-wow-delay=".1s">
-                        <p class="title">合作伙伴</p>
-                        <p class="subtitle">partner</p>
-                    </div>
-                    <div class="module-content fw">
-                        <div class="wrapper">
-                            <ul class="content_list" data-options-ease="u65e0" data-options-speed="1">
-                                <li id="partneritem_0" class="wow">
-                                    <a href="https://www.baidu.com/" title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/401/201607/1469524488299.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a href="https://www.baidu.com/" title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/110/201603/1456903258323.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a href="https://www.baidu.com/" title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/110/201603/1456902742463.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a href="https://www.baidu.com/" title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/2/201508/1439189029655.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a href="https://www.baidu.com/" title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/9/201509/1443093624332.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/9/201509/1443093245808.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/9/201509/1443093214481.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                    <a title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/9/201509/1443093178566.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                </li>
-                                <li id="partneritem_8" class="wow">
-                                    <a href="https://www.baidu.com/" title="logo name" target="_blank">
-                                        <p class="par_img"><img src="http://resources.jsmo.xin/templates/upload/2/201508/1439190821599.png" width="160" height="80" alt="logo name" /></p>
-                                        <p class="par_title">logo name</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+
             <div id="mcontact" class="module">
                 <div class="bgmask"></div>
                 <div class="content">

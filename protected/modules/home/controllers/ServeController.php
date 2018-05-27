@@ -24,7 +24,9 @@ class ServeController extends HomeController
 
         // $this->layout = '/layouts/base';
         $this->pageTitle = $info->title;
-        
-        $this->render('info',['info'=>$info]);
+        if(in_array($id, [53])) {
+            $this->render('info1',['info'=>$info]);
+        } else
+            $this->render('info',['info'=>$info]);
     }
 }
