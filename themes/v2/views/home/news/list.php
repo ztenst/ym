@@ -7,7 +7,7 @@
                     <p class="title">新闻中心</p>
                     <p class="subtitle">News</p>
                 </div>
-                <div id="category">
+                <div id="category" style="font-size: 16px">
                 <a href="<?=$this->createUrl('list')?>" class="<?=!$cid?'active':''?>">全部</a>
                 <?php $tags = TagExt::model()->normal()->findAll("cate='xw'"); if($tags) {
                     foreach ($tags as $key => $value) {?>

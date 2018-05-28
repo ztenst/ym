@@ -14,21 +14,20 @@
     background-size: cover;
     background-color: transparent;
     background-position: 50% 50%;
-    background-image: url(/static/imgs/129.jpg);">
+    background-image: url(/static/imgs/130.jpg);">
         <div class="text-box" style="width:100%;text-align:center;color:#fff;">
             <p style="font-size:5rem;padding-top:16px;">
-                杭州英曼猎头服务
+                英曼外教管理
             </p>
             <p style="font-size:3rem;padding-top:20px;">
-                打造不一样的职场竞争力
+                建立外教人力资源管理服务体系
             </p>
         </div>
     </div>
     <p>
     	<center>
     		<h1 style="margin-top: 50px;margin-bottom: 50px">
-    			为中国各大学校以及教育机构提供卓越的外籍人才输送服务<br>
-    			包括语言类教师、学科类教师以及学术类教师
+    			建立外教人力资源管理服务体系<br>包括招聘外教、建立薪酬体系、绩效考核、福利体系等<br>让用人机构"方便用人，放心用人"
     		</h1>
     	</center>
     	
@@ -37,8 +36,8 @@
     <center >
     <div style="width:1200px;">
     
-        <img style="width:40%;margin:0 4%;" src="/static/imgs/l1.jpg"/>
-        <img style="width:40%;margin:0 4%;"  src="/static/imgs/l2.jpg"/>
+        <img style="width:40%;margin:0 4%;" src="/static/imgs/l3.jpg"/>
+        <img style="width:40%;margin:0 4%;"  src="/static/imgs/l4.jpg"/>
         
     </div></center>
     <!-- <div style="width: 20%"></div> -->
@@ -99,7 +98,7 @@
         <p>
     	<center>
     		<h1 style="margin-top: 50px;margin-bottom: 50px">
-    			了解更多猎头服务资讯，请联系邮箱 <a href="<?=$this->createUrl('/home/about/contact')?>">info@ym-edudoor.com</a> 
+    			了解更多外教管理资讯，请联系邮箱 <a href="<?=$this->createUrl('/home/about/contact')?>">info@ym-edudoor.com</a> 
     		</h1>
     	</center>
     	

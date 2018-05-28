@@ -12,7 +12,7 @@ class NewsController extends HomeController
         }
         $infos = ArticleExt::model()->normal()->findAll($criteria);
     	// $this->layout = '/layouts/base';
-        $this->pageTitle = '服务列表';
+        $this->pageTitle = '新闻中心';
         
         $this->render('list',['infos'=>$infos,'cid'=>$cid]);
     }

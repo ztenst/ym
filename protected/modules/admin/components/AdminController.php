@@ -68,6 +68,7 @@ class AdminController extends Controller
             ['label' => '关于我们','icon' => 'icon-speedometer', 'url' => ['/admin/news/aboutlist'],'active'=>$this->route=='admin/news/aboutedit'||$this->route=='vip/news/list'],
             ['label' => '我们的服务','icon' => 'icon-speedometer', 'url' => ['/admin/news/servelist'],'active'=>$this->route=='admin/news/serveedit'||$this->route=='vip/news/list'],
             ['label' => '新闻中心','icon' => 'icon-speedometer', 'url' => ['/admin/news/newslist'],'active'=>$this->route=='admin/news/newsedit'||$this->route=='vip/news/list'],
+            ['label' => '游学管理','icon' => 'icon-speedometer', 'url' => ['/admin/yx/list'],'active'=>$this->route=='admin/yx/edit'||$this->route=='vip/yx/list'],
             // ['label' => '产品管理', 'icon' => 'icon-speedometer', 'items' => [
             //     ['label' => '发布产品', 'url' => ['/admin/product/edit']],
             //     ['label' => '产品列表', 'url' => ['/admin/product/list']],
