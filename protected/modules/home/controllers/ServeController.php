@@ -10,6 +10,7 @@ class ServeController extends HomeController
         if($cid) {
             $criteria->addCondition("cid=$cid");
         }
+        $criteria->order = 'sort desc';
         $infos = ArticleExt::model()->normal()->findAll($criteria);
     	// $this->layout = '/layouts/base';
         $this->pageTitle = '服务列表';
