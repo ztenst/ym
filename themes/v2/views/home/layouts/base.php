@@ -74,7 +74,7 @@
         <?=$content?>
     </div>
     <div id="footer" style="padding: 0;height: auto;">
-        <p>COPYRIGHT (©) 2018 杭州英曼人力资源服务有限公司版权所有. <a class="beian" href="http://www.miitbeian.gov.cn/" style="display:inline; width:auto; color:#8e8e8e" target="_blank"> </a></p>
+        <p>COPYRIGHT (©) 2018 杭州英曼人力资源管理有限公司版权所有. <a class="beian" href="http://www.miitbeian.gov.cn/" style="display:inline; width:auto; color:#8e8e8e" target="_blank"> </a></p>
     </div>
     <div id="shares"><a id="sshare"><i class="fa fa-share-alt"></i></a><a href="http://service.weibo.com/share/share.php?appkey=3206975293&" target="_blank" id="sweibo"><i class="fa fa-weibo"></i></a><a href="javascript:;" id="sweixin"><i class="fa fa-weixin"></i></a><a href="javascript:;" id="gotop"><i class="fa fa-angle-up"></i></a></div>
     <div class="fixed" id="fixed_weixin">

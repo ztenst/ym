@@ -21,14 +21,14 @@
                     <span class="american-line-l-content-span1"><?=$value->fm_title?></span> <span class="american-line-l-content-span2"><?=$value->fm_desc?></span> </a>
                     <?php  foreach (range(1, 4) as $f) {?>
                     <div class="american-line-l-content-div fl">
-                    <a target="_blank" href="<?=$this->createUrl('yxinfo',['id'=>$value->id])?>">
+                    <a>
                     <?php $tmp = 'ts_image'.$f ?>
                     <?php $tmp1 = 'ts_title'.$f ?>
                         <img src="<?=ImageTools::fixImage($value->$tmp,230,227)?>" height="227" width="230" alt="">
                         </a>
                     <div class="american-line-l-content-div-b"><a target="_blank" href="<?=$this->createUrl('yxinfo',['id'=>$value->id])?>">
                             <span><?=$value->$tmp1?></span>
-                            </a><a target="_blank" href="<?=$this->createUrl('yxinfo',['id'=>$value->id])?>">了解详情</a>
+                            </a>
                     </div>
                 </div>
                     <?php } ?>

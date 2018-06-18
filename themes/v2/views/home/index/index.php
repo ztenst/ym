@@ -98,9 +98,9 @@
             <div class="mlist service module" style="padding-bottom: 0"> 
          <div class="bgmask"></div>
          <div class="module_container">
-                    <div class="container_header wow animated" style="visibility: visible;width: 100%">
+                    <div class="container_header wow animated" style="visibility: visible;width: 100%"><a href="<?=$this->createUrl('/home/serve/list')?>">
                 <p class="title" style="text-align: center">优质的服务</p>
-                <p class="subtitle" style="text-align: center">Business Services</p>       </div>
+                <p class="subtitle" style="text-align: center">Business Services</p>      </a> </div>
                     
                                   <div class="container_content">
                   <div class="content_wrapper">
@@ -196,8 +196,10 @@
                 <div class="bgmask"></div>
                 <div class="content layoutnone">
                     <div class="header wow">
+                    <a href="<?=$this->createUrl('/home/news/list')?>">
                         <p class="title">新闻中心</p>
                         <p class="subtitle">News</p>
+                        </a>
                     </div>
                     <div class="module-content" id="newslist">
                         <div class="wrapper">
@@ -222,7 +224,7 @@
                         </div>
                     </div>
                     <div class="clear"></div>
-                    <a href="<?=$this->createUrl('/home/news/info',['id'=>$value->id])?>" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+                    <a href="<?=$this->createUrl('/home/news/list')?>" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
                     <div style="height:0">&nbsp;</div>
                 </div>
             </div>
@@ -236,10 +238,10 @@
                     </div>
                     <div id="contactlist" class="fw">
                         <div id="contactinfo" class="fl wow" data-wow-delay=".2s">
-                            <h3 class="ellipsis name">杭州英曼人力资源服务有限公司</h3>
+                            <h3 class="ellipsis name">杭州英曼人力资源管理有限公司</h3>
                             <p class="ellipsis add"><span>地点：</span><?=SiteExt::getAttr('qjpz','addr')?></p>
                             <p class="ellipsis zip"><span>邮编：</span><?=SiteExt::getAttr('qjpz','yb')?></p>
-                            <p class="ellipsis mobile"><span>手机：</span><?=SiteExt::getAttr('qjpz','sitePhone')?></p>
+                            <!-- <p class="ellipsis mobile"><span>手机：</span><?=SiteExt::getAttr('qjpz','sitePhone')?></p> -->
                             <p class="ellipsis email"><span>邮箱：</span><?=SiteExt::getAttr('qjpz','mail')?></p>
                             <div><a class="fl" target="_blank" href="http://weibo.com/web"><i class="fa fa-weibo"></i></a><a class="fl" target="_blank" href="tencent://message/?uin=<?=SiteExt::getAttr('qjpz','qq')?>&Site=uemo&Menu=yes"><i class="fa fa-qq"></i></a> <a id="mpbtn" class="fl" href=""><i class="fa fa-weixin"></i></a></div>
                         </div>

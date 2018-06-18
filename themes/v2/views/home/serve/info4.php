@@ -9,7 +9,7 @@
 <div class="npagePage " id="npagePage">
            <div class="content">
     <div class="header" style="
-    height:480px;
+    height:360px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -33,8 +33,8 @@
     	
     </p>
 
-    <div class="customized-title mtop50" style="width: 1200px;margin: 0 auto;height: 400px;margin-top: 80px;padding-bottom: 30px">
-                <center>  <h2>私人定制流程</h2></center>
+    <div class="customized-title mtop50" style="width: 1200px;margin: 0 auto;height: 300px;margin-top: 80px;padding-bottom: 30px">
+                <center>  <h1>私人定制流程</h1></center>
                 <img src="/static/imgs/142.jpg" style="padding-top: 30px">
             </div>
         <p>
