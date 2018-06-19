@@ -44,7 +44,7 @@
     <div id="header" class="index_nav">
         <div class="content">
             <a href="<?=$this->createUrl('/home/index/index')?>" id="logo"><img src="<?=ImageTools::fixImage(SiteExt::getAttr('qjpz','pcLogo'),194,40)?>" height="40" />
-                <span class="cname">杭州英曼人力资源有限公司</span>
+                <span class="cname">杭州英曼人力资源管理有限公司</span>
             </a>
             <ul id="nav">
             <?php $pathInfo = Yii::app()->request->getPathInfo();?>

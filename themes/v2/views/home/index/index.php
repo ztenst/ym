@@ -106,7 +106,7 @@
                   <div class="content_wrapper">
                                           <ul class="content_list row gutter">
                                           <?php $tagdes = ['一站式便捷服务','探索世界 从此开始','海外资源 你我共享'] ?>
-                                          <?php $desdes = ['杭州英曼人力资源有限公司拥有来自世界各国的国际认证母语外教资源库，范围遍布全国...','只有自己走向世界，用自己的眼睛观察世界，才能发现哪里才是最适合自己的...','以更高的平台挖掘自身的潜力，致力于提供量身定做的海外实习项目，感受不一样的实习氛围...'] ?>
+                                          <?php $desdes = ['杭州英曼人力资源管理有限公司拥有来自世界各国的国际认证母语外教资源库，范围遍布全国...','只有自己走向世界，用自己的眼睛观察世界，才能发现哪里才是最适合自己的...','以更高的平台挖掘自身的潜力，致力于提供量身定做的海外实习项目，感受不一样的实习氛围...'] ?>
                                           <?php if($tags = TagExt::model()->findAll("cate='fw'")) foreach ($tags as $key => $value) {?>
                                               <li id="item_block_<?=$key?>" class="item_block col-33 wow" style="animation-delay: 0s; visibility: visible; animation-name: fadeInUp;">
             <div class="content">
