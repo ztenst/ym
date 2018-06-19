@@ -61,6 +61,9 @@ class ArticleExt extends Article{
     }
 
     public function beforeValidate() {
+        if(strstr($this->time,'-')) {
+            $this->time = strtotime($this->time);
+        }
         if($this->getIsNewRecord())
             $this->created = $this->updated = time();
         else

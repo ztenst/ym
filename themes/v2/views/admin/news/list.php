@@ -39,7 +39,7 @@ $this->breadcrumbs = array($this->pageTitle);
         <th class="text-center">作者</th>
         <th class="text-center">栏目</th>
         <th class="text-center">添加时间</th>
-        <th class="text-center">修改时间</th>
+        <th class="text-center">显示时间</th>
         <th class="text-center">状态</th>
         <th class="text-center">操作</th>
     </tr>
@@ -54,7 +54,7 @@ $this->breadcrumbs = array($this->pageTitle);
             <td class="text-center"><?=$v->author?></td>
             <td class="text-center"><?=TagExt::getNameByTag($v->cid)?></td>            
             <td class="text-center"><?=date('Y-m-d',$v->created)?></td>
-            <td class="text-center"><?=date('Y-m-d',$v->updated)?></td>
+            <td class="text-center"><?=date('Y-m-d',$v->time)?></td>
             <td class="text-center"><?php echo CHtml::ajaxLink(ArticleExt::$status[$v->status],$this->createUrl('ajaxChangeStatus'), array('type'=>'get', 'data'=>array('id'=>$v->id),'success'=>'function(data){location.reload()}'), array('class'=>'btn btn-sm '.ArticleExt::$statusStyle[$v->status])); ?></td>
 
             <td style="text-align:center;vertical-align: middle">

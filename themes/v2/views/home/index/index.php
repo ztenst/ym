@@ -209,7 +209,7 @@
                                     <a class="newscontent" target="_blank" href="<?=$this->createUrl('/home/news/info',['id'=>$value->id])?>">
                                         <div class="news_wrapper">
                                             <div class="newsbody">
-                                                <p class="date"><span class="md"><?=date('Y',$value->updated)?><span>-</span></span><span class="year"><?=date('m-d',$value->updated)?></span></p>
+                                                <p class="date"><span class="md"><?=date('Y',$value->time)?><span>-</span></span><span class="year"><?=date('m-d',$value->time)?></span></p>
                                                 <p class="title"><?=$value->title?></p>
                                                 <div class="separator"></div>
                                                 <p class="description"><?=Tools::u8_title_substr($value->desc,80)?></p>

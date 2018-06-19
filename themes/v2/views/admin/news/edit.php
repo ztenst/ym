@@ -73,6 +73,21 @@ $this->breadcrumbs = array($this->pageTitle);
     <div class="col-md-2"><?php echo $form->error($article, 'source') ?></div>
 </div>
 <div class="form-group">
+                <label class="col-md-2 control-label text-nowrap">显示时间</label>
+                <div class="col-md-4">
+                    <div class="input-group date form_datetime" >
+                        <?php echo $form->textField($article,'time',array('class'=>'form-control','value'=>($article->time?date('Y-m-d',$article->time):''))); ?>
+                        <span class="input-group-btn">
+                          <button class="btn default date-set" type="button"><i class="fa fa-calendar"></i></button>
+                       </span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="help-inline"> </span>
+                </div>
+                <div class="col-md-12"></div>
+            </div>
+<div class="form-group">
     <label class="col-md-2 control-label">状态</label>
     <div class="col-md-4">
         <?php echo $form->radioButtonList($article, 'status', ArticleExt::$status, array('separator' => '')); ?>
