@@ -20,7 +20,7 @@
             font-size: 18px;
             margin-left: -56px;
             position: absolute;
-            width: 240px;
+            width: 260px;
             top: 14px;
             font-style: oblique;
         }
