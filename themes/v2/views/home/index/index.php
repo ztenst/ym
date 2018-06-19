@@ -81,7 +81,7 @@
                 </script>
                 <ul class="slider" data-options-height="640" data-options-auto="0" data-options-mode="1" data-options-pause="5" data-options-ease="ease-out">
                     <?php if($imgs = SiteExt::getAttr('qjpz','pcIndexImages')) foreach ($imgs as $key => $value) {?>
-                        <li style="background-image:url(<?=ImageTools::fixImage($value)?>)" class="active">
+                        <li style="background-image:url(<?=ImageTools::fixImage($value,1915,640)?>)" class="active">
                             <div id="tempImage_<?=$key?>"></div><img style="display:none" src="<?=ImageTools::fixImage($value,1915,640)?>" alt="" />
                             <div class="mask"></div>
                             <a target="_blank">
