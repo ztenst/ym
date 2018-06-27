@@ -5,7 +5,7 @@
             <div class="content">
                 <div class="header" id="plheader">
                     <p class="title">我们的服务</p>
-                    <p class="subtitle">Our Serves</p>
+                    <p class="subtitle">Our Service</p>
                 </div>
                 <ul id="category">
                 <li><a href="<?=$this->createUrl('list')?>" class="<?=!$cid?'active':''?>">全部</a></li>
