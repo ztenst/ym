@@ -5,7 +5,10 @@ class IndexController extends HomeController
     {
         $this->banner = '';
     	$this->layout = '/layouts/base';
-        $this->pageTitle = '首页';
+        $this->pageTitle = '杭州英曼人力资源管理有限公司';
+        $this->keywords = '人力资源管理，杭州英曼，出国游学，暑期夏令营';
+        $this->description = '  
+杭州英曼人力资源有限公司，坐落于杭州市。公司立足于教育观念全球化的趋势，主要针对中国各大学校以及教育机构收集信息，提供外教招聘服务，并面向广大学子，开展各项国际文教项目，包括暑期夏令营项目、海外志愿项目以及海外实习项目等等。';
         if(Yii::app()->request->getIsPostRequest()) {
 
             $data['name'] = Yii::app()->request->getPost('name');
