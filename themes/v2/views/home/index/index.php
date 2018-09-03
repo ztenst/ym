@@ -243,7 +243,8 @@
                             <p class="ellipsis zip"><span>邮编：</span><?=SiteExt::getAttr('qjpz','yb')?></p>
                             <!-- <p class="ellipsis mobile"><span>手机：</span><?=SiteExt::getAttr('qjpz','sitePhone')?></p> -->
                             <p class="ellipsis email"><span>邮箱：</span><?=SiteExt::getAttr('qjpz','mail')?></p>
-                            <div><a class="fl" target="_blank" href="http://weibo.com/web"><i class="fa fa-weibo"></i></a><a class="fl" target="_blank" href="tencent://message/?uin=<?=SiteExt::getAttr('qjpz','qq')?>&Site=uemo&Menu=yes"><i class="fa fa-qq"></i></a> <a id="mpbtn" class="fl" href=""><i class="fa fa-weixin"></i></a></div>
+                            <div><a class="fl" target="_blank" href="http://weibo.com/web"><i class="fa fa-weibo"></i></a><a class="fl" target="_blank" href="tencent://message/?uin=<?=SiteExt::getAttr('qjpz','qq')?>&Site=uemo&Menu=yes"><i class="fa fa-qq"></i></a> <a id="mpbtn" class="fl" href=""><i class="fa fa-weixin"></i></a>                            <img src="http://oofuaem2b.bkt.clouddn.com/2018/0903/1535982287718383914.jpg?imageView2/2/w/400/h/300/interlace/1/q/100" style="width: 150px;height: 150px;float: right;margin-top: -90px" alt="">
+</div>
                         </div>
                         <div id="contactform" class="fr wow" data-wow-delay=".2s">
                             <form action="http://mo004_1497.mo4.line1.uemo.net/message/" method="post">
