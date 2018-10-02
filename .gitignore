@@ -6,5 +6,4 @@ protected/runtime/*
 !protected/runtime/.gitignore
 .idea/*
 .tags1
-upload/*
 images/*
